@@ -30,6 +30,14 @@
     "react-test-renderer": "17.0.1",
     "typescript": "^3.8.3"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": "prettier --write"
+  },
   "resolutions": {
     "@types/react": "^17"
   },
